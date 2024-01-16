@@ -1,0 +1,124 @@
+$font: sans-serif;
+$navColor: #1c337d; // navigation and footer colors
+$coountyLinksPadding: 25px;
+
+body {
+  margin: 0;
+  font-family: $font;
+}
+
+// centered text styling
+@mixin centerText {
+  color:#fff;
+  text-align: center;
+  font-family: $font;
+  font-weight: bold;
+}
+
+// Controls the colors of the links on page & links light up on hover
+@mixin linkColor($color: #fff) {
+  & a:hover {
+    color: $color;
+  }
+  & .active {
+    color: $color;
+  }
+}
+
+// navigation bar
+nav {
+  @include linkColor;
+  background-color: $navColor;
+  
+  & ul {
+    display: flex;
+    margin: 0;
+    list-style: none;
+    padding: 20px;
+  }
+
+}
+
+nav li,
+nav a {
+  color: rgba(255,255,255,.5);
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+// Styles the background image and site taglines at the top of the page
+header {
+  background-image: linear-gradient(rgba(95, 132, 162, 0.5), rgba(95, 132, 162, 0.5)), url("../imgs/hero-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2em 5em 7em 5em;
+  text-align: center;
+
+  & h1 {
+    padding: 60px;
+    font-size: 1.5rem;
+    font-style: italic;
+    @include centerText;
+    animation: slideIn 2s ease-out 0s 1;
+  }
+  & h2 {
+    padding: 20px;
+    font-size: 1.0rem;
+    font-style: oblique;
+    @include centerText;
+    animation: slideIn 7s ease-out 0s 1;
+  }
+}
+
+// header text slides in from the left on page load.
+// https://www.w3docs.com/snippets/css/how-to-create-animation-on-page-load.html, https://stackoverflow.com/questions/6805482/css3-transition-animation-on-load
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+// flexbox stuff to make links lineup horizontally 
+.countypark-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  padding-top: $countyLinksPadding;
+  padding-bottom: $countyLinksPadding;
+}
+
+// transition + transform
+//used a mish mash of sources for this, https://travis.media/how-to-make-an-item-grow-on-hover-with-css/ , https://www.30secondsofcode.org/css/s/button-hover-grow-animation/
+.countypark-links img {
+  margin: 40px; // Increase this to add more space between each item
+  height: 80px;
+  min-width: 80px;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+  transition: transform 0.7s;
+
+  // causes images/links to gradually grow when hovered over
+  &:hover {
+  transform: scale(1.25);
+  }
+}
+
+// footer
+footer {
+  @include centerText;
+  @include linkColor;
+  padding: 30px;
+  background-color: $navColor;
+
+  & nav {
+    padding: 20px;
+  }
+  & p {
+    margin: 0;
+  }
+  
+}

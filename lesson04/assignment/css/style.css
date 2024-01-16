@@ -1,0 +1,107 @@
+body {
+  margin: 0;
+  font-family: sans-serif;
+}
+
+nav {
+  background-color: #1c337d;
+}
+nav a:hover {
+  color: #fff;
+}
+nav .active {
+  color: #fff;
+}
+nav ul {
+  display: flex;
+  margin: 0;
+  list-style: none;
+  padding: 20px;
+}
+
+nav li,
+nav a {
+  color: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  text-decoration: none;
+  font-weight: 900;
+}
+
+header {
+  background-image: linear-gradient(rgba(95, 132, 162, 0.5), rgba(95, 132, 162, 0.5)), url("../imgs/hero-header.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 2em 5em 7em 5em;
+  text-align: center;
+}
+header h1 {
+  padding: 60px;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  animation: slideIn 2s ease-out 0s 1;
+}
+header h2 {
+  padding: 20px;
+  font-size: 1.0rem;
+  font-style: oblique;
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  animation: slideIn 7s ease-out 0s 1;
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+.countypark-links {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  padding-top: 25px;
+  padding-bottom: 25px;
+}
+
+.countypark-links img {
+  margin: 40px;
+  height: 80px;
+  min-width: 72px;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+  transition: transform 0.7s;
+}
+.countypark-links img:hover {
+  transform: scale(1.25);
+}
+
+footer {
+  color: #fff;
+  text-align: center;
+  font-family: sans-serif;
+  font-weight: bold;
+  padding: 30px;
+  background-color: #1c337d;
+}
+footer a:hover {
+  color: #fff;
+}
+footer .active {
+  color: #fff;
+}
+footer nav {
+  padding: 20px;
+}
+footer p {
+  margin: 0;
+}
+
+/*# sourceMappingURL=style.css.map */
