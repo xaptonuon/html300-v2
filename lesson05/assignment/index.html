@@ -5,11 +5,122 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         <link rel="stylesheet" href="css/style.css" />
-        <title>Assignment 05 - CSS Grid</title>
+        <title> Chill WA - Safety & Weather Info</title>
     </head>
     <body>
-        <main class="main">
+
+      <!--GRID-->
+      <div class="grid-container">
+        <header>
+          <h1>Safety & Weather</h1>
+          <p>Know before you Go!</p>
+        </header>
+
+        <!--NAV BAR-->
+        <nav class="nav">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#" class="active">Safety & Weather</a></li>
+            <li><a href="#">About</a></li>            
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!--SIDE BAR-->
+        <div class="sidebar">
           
+          <!--Winter Safety Section-->
+          <h2>Winter Safety:</h2>
+          <h3>Remember</h3>
+          <ul>
+            <li><span>Snow grooming equipment may be on winter trails at any time.</span></li>
+            <li><span>Trail grooming schedules may change w/o notice due to snow conditions, temperatures, equipment breakdowns, etc.</span></li>
+            <li><span>Respect all public and private property and the rights of all winter recreationists</span></li>
+            <li><span>Park your vehichle considerately without blocking other vehicles or impeding access to trails.</span></li>
+            <li><span>Do not disturb wildlife and avoid closed areas.</span></li>
+            <li><span>Do not litter, and pack out everything you packed in.</span></li>
+            <li><span>Respect designated areas, trail use signs, and established ski tracks.</span></li>
+            <li><span>For a complete list of snowmobiling rules in Washington, <a href="https://apps.leg.wa.gov/RCW/dispo.aspx?cite=46.10.110" target="_blank">go here.</a></span></li>
+          </ul>
+
+          <h3>Dressing for the Weather:</h3>
+          <ul>
+            <li><span>Wear clothing that holds the body's heat.</span></li>
+            <li><span>Clothing should be windproof, water-repellent, and capable of allowing moisture to evaporate from the body.</span></li>
+            <li><span>Down is good in dry conditions but becomes ineffective when wet.</span></li>
+            <li><span>Cotton next to the skin draws heat out of the body when it becomes damp.</span></li>
+            <li><span>Wool is the best protection--certain new synthetics are also good.</span></li>
+            <li><span>Layering clothing is advisable, as the air pockets between fabrics hold the body's heat.</span></li>
+            <li><span>Layered clothing also has the advantage of being removable if the temperature rises.</span></li>            
+          </ul>
+
+          <h3>Be Prepared, Bring the Following:</h3>
+          <ul>
+            <li><span>Cellphone / Two-Way Radio</span></li>
+            <li><span>Compass + Map</span></li>
+            <li><span>Extra Clothing</span></li>
+            <li><span>Extra Food & Water</span></li>
+            <li><span>First Aid Kit</span></li>
+            <li><span>Flashlight</span></li>
+            <li><span>Knife</span></li>
+            <li><span>Matches / Fire Starter</span></li>
+            <li><span>Thermal Blanket</span></li>
+            <li><span>Sunglasses / Goggles</span></li>
+          </ul>
+        </div>
+
+        <!--Helpful Trip Planning/Safety Links for Winter Recreation-->
+        <main class="main-content">
+          <h2><a href="https://wsdot.com/travel/real-time/mountainpasses">WSDOT Mountain Passes & Winter Travel</a></h2>
+          <p>Before you hit the road in snowy, icy weather, make sure both you and your car are ready for it. You can find winter driving conditions thanks to WSDOT.<br>
+            Remember, it’s always best to “know before you go”. So, don’t forget to check the latest road conditions before you head out.</p>
+          <img src="./imgs/traffic.png" alt="Snoqualmie Pass/I-90 in treacherous, snowy conditions" class= "winter-weather"/>
+          
+          <h2><a href="https://nwac.us">Northwest Avalance Center</a></h2>
+          <p>The Northwest Avalanche Center is all about making sure folks know about avalanches, lessening their effects, and giving everyone the lowdown on mountain weather, avalanche forecasts, learning resources, and stats. <br>
+            It’s basically your go-to hub for all things avalanche-related!</p>
+          <img src="./imgs/slope.png" alt="A snowy slope winter recreation site" class= "winter-weather"/>
+          
+          <h2><a href="https://toolkit.climate.gov/tool/snow-telemetry-snotel-data-viewer">Washington SnoTel Sites</a> </h2>
+          <p>SNOTEL, short for Snowpack Telemetry, is an automated system of snowpack and related climate sensors operated by the Natural Resources Conservation Service (NRCS). <br>
+            It’s a great resource for winter recreation enthusiasts, as it provides valuable data on snow depth, snow water content, temperature, and other climate conditions.</p>
+          <img src="./imgs/snotel.png" alt="SnoTel Site Technology setup on a snowy hillside" class= "winter-weather"/>          
         </main>
+
+    <!--Link's for County Parks & Rec Offices I'm going to acquire geodata from for my little web mapping experiment-->
+
+    <section class="countypark-links">
+    <a href="https://kingcountyparks.org/2023/08/24/plan-your-next-adventure-with-backyard-fun-finder/" target="_blank">
+      <img src="https://i0.wp.com/bytesandboxes.org/wp-content/uploads/2017/02/kingcountylogo_mlk.jpg?ssl=1" alt="King County Seal" />
+    </a>
+
+    <a  href="https://www.piercecountywa.gov/1292/Parks-Facilities-Trails" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Logo_of_Pierce_County%2C_Washington.svg" alt="Pierce County Seal" />
+    </a>
+
+    <a href="https://www.thurstoncountywa.gov/departments/public-works/parks-trails" target="_blank">
+      <img src="https://s3.us-west-2.amazonaws.com/thurstoncountywa.gov.if-us-west-2/s3fs-public/styles/max_900x600/public/2023-02/Artboard%206.png" alt="Thurston County Seal"/>
+    </a>
+
+    <a href="https://lewiscountywa.gov/departments/parks-recreation/ target="_blank">
+      <img src="https://wsac.org/wp-content/uploads/2020/06/Lewis_County_Logo.png" alt="Lewis County Seal"/>
+    </a>
+        </section>
+
+        <!--FOOTER-->
+        <footer>
+          <nav>
+            <span><a href="#">Home</a></span>
+            <span>/</span>
+            <span><a href="#" class="active">Safety & Weather</a></span>
+            <span>/</span>
+            <span><a href="#">About</a></span>
+            <span>/</span>
+            <span><a href="#">Contact</a></span>
+          </nav>
+          <p>&copy; 2024 Chill Washington &emsp;|&emsp;Olympia, WA</p>
+        </footer>
+      </div>
     </body>
 </html>
+
