@@ -4,3 +4,148 @@
 @import 'settings.responsive';
 @import 'components.content';
 
+// grid
+.grid-container {
+  display: grid;
+  grid-template-areas:
+  'header header header header header header'
+  'nav nav nav nav nav nav'
+  'side side main main main main'
+  'section section section section section section'
+  'footer footer footer footer footer footer';
+  grid-template-columns: repeat(6, 1fr);
+  @include media-query(mobile) {
+    grid-template-areas:
+    'header header header header header header'
+    'nav nav nav nav nav nav'
+    'main main main main main main'
+    'side side side side side side'
+    'section section section section section section'
+    'footer footer footer footer footer footer';
+  }
+}
+
+// header
+header {
+  grid-area: header;
+  color: $white;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../imgs/hero-header.png");
+  background-size: 100%;
+
+  & h1 {
+    font-size: 3rem;
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  // animated text for header
+  & p {
+    padding: 10px;
+    text-align: center;
+    font-size: 1rem;
+    font-style: italic;
+    animation: slideIn 1s ease-out 0s 1;
+  }
+}
+
+// header texts slides in
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+// controls the color of the links on the page
+// renders current Nav button bold white, also makes links white upon hover
+@mixin linkColor($color: #fff) {
+  & a:hover {
+    color: $color;
+  }
+  & .active {
+    color: $color;
+  }
+}
+
+// nav bar
+.nav {
+  @include linkColor;
+  grid-area: nav;
+  background-color: $darkWinterBlue;
+
+  & ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+  }
+}
+
+// styles text in navbar & footer
+nav a {
+  text-decoration: none;
+  color: $lightGrey;
+  font-weight: 900;
+}
+
+// sidebar sytling
+.sidebar {
+  grid-area: side;
+  background-color: $lightwinterBlue;
+  color: $white;
+  padding: 20px;
+}
+
+h2 {
+  text-align: center;
+}
+
+//page main content (webmap)
+.main-content {
+  grid-area: main;
+  padding: 20px;
+}
+
+// line up the WA ounty parks and rec links horizontally
+.countypark-links {
+  grid-area: section;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-content: space-around;
+  padding-top: $countyLinksPadding;
+  padding-bottom: $countyLinksPadding;
+  background-color: $whiteish;
+}
+
+.countypark-links img {
+  margin: 40px;
+  height: 80px;
+  min-width: 80px;
+  filter: drop-shadow(5px 5px 10px rgba(0, 0, 0, 0.4));
+  transition: transform 0.7s;
+
+  // links for county grow on hover
+  &:hover {
+  transform: scale(1.4);
+  }
+}
+
+// footer
+footer {
+  @include linkColor;
+  grid-area: footer;
+  padding: 30px;
+  text-align: center;
+  background-color: $darkWinterBlue;
+  color: $lightGrey;
+
+  & nav {
+    padding: 20px;
+  }
+  & p {
+    margin: 0;
+  }
+}
