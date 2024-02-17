@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Travel</title>
+  </head>
+  <body>
+    <header>
+      <h1>Winter Travel Advisory</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li> <!-- home page -->
+        <li><a href="travel.html" class="active">Travel Advisory</a></li> <!-- images page -->
+        <li><a href="safety.html">Safety Tips</a></li> <!-- accordian page -->
+        <li><a href="activities.html">Winter Rec Activities</a></li> <!-- grid page -->
+      </ul>
+    </nav>
+    <main>
+      
+      <!--Image+Card Section w/ Bootstrap -->
+
+      <!--WSDOT section recycled from assignment 5.-->
+      <img src="./imgs/snoqualmie-pass.jpg" class="img-fluid img-thumbnail wr-travel-img" alt="snowy snoqualmie pass">
+      <div class="card text-center">
+        <div class="card-header">
+          WSDOT Mountain Passes & Winter Travel
+        </div>
+        <div class="card-body">
+          <p class="card-text">WSDOT provides a map of all the Mountain Passes in WA State, and even provides some helpful winter driving tips! </p>
+          <p class="card-text">Before you hit the road in snowy, icy weather, make sure both you and your car are ready for it. You can find winter driving conditions thanks to WSDOT.</p>
+          <p class="card-text">Remember, it’s always best to “know before you go”. So, don’t forget to check the latest road conditions before you head out.</p>
+          <a href="https://wsdot.com/travel/real-time/mountainpasses" class="btn btn-primary">WSDOT</a>
+        </div>
+        <div class="card-footer text-muted">
+          Tune into the Highway Advisory Radio at 1610 AM and 530 AM, or follow them on X @wsdot_passes.
+        </div>
+      </div>
+
+      <!--NW Avalanche Center section recycled from assignment 5. -->
+      <img src="./imgs/avalanche.jpeg" class="img-fluid img-thumbnail wr-travel-img" alt="Avalanche in snowy WA Cascades">
+      <div class="card text-center">
+        <div class="card-header">
+          Northwest Avalance Center
+        </div>
+        <div class="card-body">
+          <p class="card-text">The Northwest Avalanche Center is all about making sure folks know about avalanches, lessening their effects, and giving everyone the lowdown on mountain weather, avalanche forecasts, learning resources, and stats. <br>
+            It’s basically your go-to hub for all things avalanche-related!</p>
+          </p>
+          <a href="https://nwac.us" class="btn btn-primary">NWAC</a>
+        </div>
+        <div class="card-footer text-muted">
+          Share your observations with Northwest Avalanche Center on social media with #NWAC.
+        </div>
+      </div>
+
+      <!--WA SnoTel Sites data section recycled from assignment 5. -->
+      <img src="./imgs/snotel.jpeg" class="img-fluid img-thumbnail wr-travel-img" alt="Snotel instrumentation technology setup">
+      <div class="card text-center">
+        <div class="card-header">
+          Washington SnoTel Sites
+        </div>
+        <div class="card-body">
+          <p class="card-text">SNOTEL, short for Snowpack Telemetry, is an automated system of snowpack and related climate sensors operated by the Natural Resources Conservation Service (NRCS).</p>
+          <p class="card-text">It’s a great resource for winter recreation enthusiasts, as it provides valuable data on snow depth, snow water content, temperature, and other climate conditions.</p>
+          <a href="https://toolkit.climate.gov/tool/snow-telemetry-snotel-data-viewer" class="btn btn-primary">SNOTEL</a>
+        </div>
+        <div class="card-footer text-muted">
+          Share your observations and follow the Natural Resouce Conservation Service on X @USDA_NRCS.
+        </div>
+      </div>
+    </main>
+  </body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+</html>
