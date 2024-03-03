@@ -4,12 +4,6 @@
       <h1>Winter Travel Advisory</h1>
     </header>
     <nav>
-      <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/travel" class="active">Travel</router-link></li>
-        <li><router-link to="/safety">Safety</router-link></li>
-        <li><router-link to="/activities">Activities</router-link></li>
-      </ul>
     </nav>
     <main>
       <!-- Image+Card Section w/ Bootstrap -->

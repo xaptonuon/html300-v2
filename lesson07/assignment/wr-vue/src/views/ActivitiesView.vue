@@ -4,12 +4,6 @@
       <h1>Winter Rec Activities</h1>
     </header>
     <nav>
-      <ul>
-        <li><router-link to="/">Home</router-link></li>
-        <li><router-link to="/travel">Travel</router-link></li>
-        <li><router-link to="/safety">Safety</router-link></li>
-        <li><router-link to="/activities" class="active">Activities</router-link></li>
-      </ul>
     </nav>
     <main>
       <div class="grid-container">
@@ -56,23 +50,23 @@ export default {
               title: 'Motorized Winter Recreation',
               subtitle: '(Snowmobiling)',
               info: [
-                'Snowmobiling is one of the state\'s most popular winter activities!',
-                'More than 3,000 miles of groomed snowmobile trails',
+                'Snowmobiling is one of tbe most popular winter activities in Washington State!',
+                'There are  more than 3,000 miles of groomed snowmobile trails',
                 'Cleared parking areas for vehicles in close proximity to groomed and/or backcountry trails.',
                 'Note: Children under age 12 may not operate a snowmobile on or across a public roadway or highway.',
-                '<a href="https://apps.leg.wa.gov/RCW/dispo.aspx?cite=46.10.110">View the complete snowmobiling rules</a> in the Revised Code of Washington.'
+                'View the complete snowmobiling rules in the Revised Code of Washington at https://apps.leg.wa.gov/RCW/dispo.aspx?cite=46.10.110">.'
               ]
             },
             {
               title: 'Snowmobiling Tips',
               info: [
-                '<span class="info-title">Watch your speed:</span> Ride at a reasonable and prudent speed relative to existing conditions and other trail users.',
-                '<span class="info-title">Use the Buddy System:</span> Never snowmobile alone! In case of an accident or machine failure, that second machine and rider may be your only means for a safe return.',
-                '<span class="info-title">Lights on!</span> Always use your lights between dusk and dawn.',
-                '<span class="info-title">Respect Private Property:</span> Obtain permission from landowners before entering private property.',
-                '<span class="info-title">Always</span> respect non-motorized sports trails marked with cross-country ski signs or blue diamonds. Snowmobile traffic ruins cross-country ski tracks.',
-                '<span class="info-title">DO NOT</span> harass or endanger wildlife. Protect winter wildlife populations by viewing animals from a distance, maintaining a constant speed, and staying on your snowmobile when animals are present.',
-                '<span class="info-title">NEVER</span> ride under the influence of alcohol or drugs--or ride in a manner that would endanger lives or property.'
+                'Watch your speed: Ride at a reasonable and prudent speed relative to existing conditions and other trail users.',
+                'Use the Buddy System: Never snowmobile alone! In case of an accident or machine failure, that second machine and rider may be your only means for a safe return.',
+                'Lights on! Always use your lights between dusk and dawn.',
+                'Respect Private Property: Obtain permission from landowners before entering private property.',
+                'Always respect non-motorized sports trails marked with cross-country ski signs or blue diamonds. Snowmobile traffic ruins cross-country ski tracks.',
+                'DO NOT harass or endanger wildlife. Protect winter wildlife populations by viewing animals from a distance, maintaining a constant speed, and staying on your snowmobile when animals are present.',
+                'NEVER ride under the influence of alcohol or drugs--or ride in a manner that would endanger lives or property.'
               ]
             }
           ]
@@ -96,7 +90,7 @@ export default {
                 'To ensure an enjoyable experience for all visitors, please respect trail courtesy and keep your dogs on leash throughout the sled dog trail system as well as the parking areas.',
                 'Dogs are not allowed in the nearby Erling Stordahl Sno-Park. However, they are permitted on leash or harness only on the Palouse to Cascades State Park Trail east of Lost Lake Road crossing.',
                 'The trail system comprises old logging roads, a segment of the Palouse to Cascades State Park Trail, and utility corridors, offering an excellent sled dog trail experience during the winter.',
-                'Dog teams cannot stop on a dime and can be about 70\' long.  While these are working dogs and trained to obey the musher, they may take a few seconds to come to a stop depending on their speed, team size and snow conditions.  If a team is approaching, please step to the side and give them some room.'
+                'Dog teams cannot stop on a dime and can be about 70 feet long.  While these are working dogs and trained to obey the musher, they may take a few seconds to come to a stop depending on their speed, team size and snow conditions.  If a team is approaching, please step to the side and give them some room.'
               ]
             }
           ]

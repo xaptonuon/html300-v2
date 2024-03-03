@@ -3,12 +3,6 @@
     <header>
       <h1>Chill Washington</h1>
       <nav>
-        <ul>
-          <li><router-link to="/" class="active">Home</router-link></li>
-          <li><router-link to="/travel">Travel Advisory</router-link></li>
-          <li><router-link to="/safety">Safety Tips</router-link></li>
-          <li><router-link to="/activities">Winter Rec Activities</router-link></li>
-        </ul>
       </nav>
       <div class="hero-image" title="photo credit: WA State Parks Winter Recreation">
         <div id="hero-1" class="hero-text">
@@ -39,22 +33,4 @@
   </div>
 </template>
 
-<script>
-import snowstorm from './snowstormv144_20131208/snowstorm';
 
-export default {
-  methods: {
-    launchMap() {
-      // Handle map launch logic here
-    }
-  },
-  mounted() {
-    const popover = new bootstrap.Popover(this.$refs.popover, {
-      trigger: 'focus'
-    });
-
-    // Initialize snowstorm effect
-    snowstorm();
-  }
-}
-</script>
