@@ -28,9 +28,21 @@
 
     <main class="main">
       <p>Chill Washington works with land management agencies and park and recreation offices to help curate web maps and practical information for your favorite winter recreation activities in Washington State, all in one place! Special thanks to the WA Counties above, helping us curate outdoor recreation opportunities across Washington, with more to come! <strong>"Embrace the Chill"</strong>--Washington’s Winter Wonderland Awaits!</p>
-      <button tabindex="0" class="btn btn-lg btn-success" role="button" @click="launchMap" ref="popover">Launch Map</button>
+      <!-- Embedded the winterMap component here (used MapBox API)-->
+      <winterMap />
     </main>
   </div>
 </template>
 
+<script>
+import winterMap from '@/components/winterMap'; // Import the winterMap component
 
+export default {
+  components: {
+    winterMap, // Register the winterMap component
+  },
+};
+</script>
+
+<style>
+</style>
