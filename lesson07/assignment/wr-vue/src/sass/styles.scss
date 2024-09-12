@@ -1,4 +1,4 @@
-// Import partials here
+ // Import partials here
 @import 'base.normalize';
 @import 'settings.variables';
 @import 'settings.responsive';
@@ -148,7 +148,10 @@ main {
   }
 }
 
-// grid css for WR Activities page
+.img-border {
+  border: 5px solid #4f9e81
+}
+
 .img {
   width: 75%;
   border-radius: 10px;
