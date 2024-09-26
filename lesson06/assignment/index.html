@@ -1,15 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-        <link rel="stylesheet" href="css/style.css" />
-        <title>Assignment 06 - Bootstrap 4</title>
-    </head>
-    <body>
-        <main class="main">
-          
-        </main>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>Chill Washington</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/style.css"/>
+  </head>
+  <body>
+    
+    <header>
+      <h1>Chill Washington</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html" class="active">Home</a></li> <!-- home page -->
+          <li><a href="travel.html">Travel Advisory</a></li> <!-- images page w/ buttons -->
+          <li><a href="safety.html">Safety Tips</a></li> <!-- accordian page -->
+          <li><a href="activities.html">Winter Rec Activities</a></li> <!-- grid page -->
+        </ul>
+      </nav>
+      <div class="hero-image" title="photo credit: WA State Parks Winter Recreation">
+       
+        <div id="hero-1" class="hero-text">
+          <h1>Embrace the ❄️Chill❄️</h1>
+        </div>
+      </div>
+    </header>
+
+    <section class="links">
+  
+      <!--King County, WA Parks & Rec-->
+      <a href="https://kingcountyparks.org/2023/08/24/plan-your-next-adventure-with-backyard-fun-finder/" target="_blank"><img src="https://i0.wp.com/bytesandboxes.org/wp-content/uploads/2017/02/kingcountylogo_mlk.jpg?ssl=1" alt="King County Parks and Recreation logo"/></a>
+      <!--Pierce County, WA Parks & Rec-->
+      <a href="https://www.piercecountywa.gov/1292/Parks-Facilities-Trails" target="_blank"><img src="https://upload.wikimedia.org/wikipedia/commons/5/55/Logo_of_Pierce_County%2C_Washington.svg" alt="Pierce County Parks and Recreation logo"/></a>
+      <!--Thurston County, WA Parks & Rec-->
+      <a href="https://www.thurstoncountywa.gov/departments/public-works/parks-trails" target="_blank"><img src="https://s3.us-west-2.amazonaws.com/thurstoncountywa.gov.if-us-west-2/s3fs-public/styles/max_900x600/public/2023-02/Artboard%206.png" alt="Thurston County Parks and Recreation logo"/></a>
+      <!--Lewis County, WA Park & Rec-->
+      <a href="https://lewiscountywa.gov/departments/parks-recreation/" target="_blank"><img src="https://wsac.org/wp-content/uploads/2020/06/Lewis_County_Logo.png" alt="Lewis County Parks and Recreation logo"/></a>
+    </section>
+
+    <main class="main">
+      <p> Chill Washington works with land management agencies and park and recreation offices to help curate web maps and practical information for your favorite winter recreation activities in Washington State,
+        all in one place! Special thanks to the WA Counties above, helping us curate outdoor recreation opportunities across Washington, with more to come! <strong>"Embrace the Chill"</strong>--Washington’s Winter Wonderland Awaits! </p>
+
+      <p>I'm thinking the Winter Rec Web Map will probably be embedded ⬇ down here ⬇ I'm thinking 🤔..</p>
+
+      <!--popover -->
+      <a tabindex="0" class="btn btn-lg btn-success" role="button" data-bs-toggle="popover" data-bs-trigger="focus" data-bs-title="Launch Map" data-bs-content="You'll be able to launch a dedicated Winter Rec Web Map from this button here eventually...maybe..">Launch Map</a>
+    </main>
+
+    <!--fun little snow JS animation I grabbed from here, https://www.schillmania.com/projects/snowstorm/, goes well with my site :) -->
+  <script src="snowstormv144_20131208/snowstorm.js"></script>
+
+     <!-- bootstrap script for popover stuff -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  
+  <script>
+    const popoverTriggerList = document.querySelectorAll('[data-bs-toggle="popover"]')
+    const popoverList = [...popoverTriggerList].map(popoverTriggerEl => new bootstrap.Popover(popoverTriggerEl))
+    const popover = new bootstrap.Popover('.popover-dismiss', {
+      trigger: 'focus'
+    })
+  </script>
+  </body>
 </html>
